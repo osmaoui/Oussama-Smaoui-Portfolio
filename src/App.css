@@ -1,5 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Calibre:wght@400;500;600;700&family=SF+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --pink: #f57dff;
+  --blue: #57cbff;
+  --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  background: var(--navy);
+  color: var(--slate);
+  font-family: var(--font-sans);
+  line-height: 1.3;
+  position: relative;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar - Tech style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(26, 26, 26, 0.8);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00ffff, #ff0080);
+  border-radius: 0;
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #4dffff, #ff4da6);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+/* Tech animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glitchEffect {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px rgba(0, 255, 255, 0.5),
+      0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 15px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.8),
+      0 0 20px rgba(0, 255, 255, 0.8),
+      0 0 30px rgba(0, 255, 255, 0.8);
+  }
+}
+
+@keyframes dataFlow {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.glitch {
+  animation: glitchEffect 0.3s ease-in-out;
+}
+
+.neon-glow {
+  animation: neonGlow 2s ease-in-out infinite;
+}
+
+/* Tech card effects */
+.tech-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(26,26,26,0.9) 0%, rgba(40,40,40,0.9) 100%);
+  border: 1px solid rgba(0,255,255,0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.tech-card:hover::before {
+  left: 100%;
+}
+
+.tech-card:hover {
+  border: 1px solid rgba(0,255,255,0.5);
+  box-shadow: 0 8px 32px rgba(0,255,255,0.2);
+  transform: translateY(-4px);
+}
+
+/* Gradient text effects */
+.text-gradient-cyan {
+  background: linear-gradient(45deg, #00ffff, #4dffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-neon {
+  background: linear-gradient(45deg, #00ffff, #ff0080, #8844ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: neonGlow 2s ease-in-out infinite;
+}
+
+.text-gradient-matrix {
+  background: linear-gradient(45deg, #00ff88, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tech button effects */
+.tech-button {
+  position: relative;
+  background: linear-gradient(45deg, rgba(0,255,255,0.1) 0%, rgba(255,0,128,0.1) 100%);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tech-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
+  transition: left 0.3s ease;
+}
+
+.tech-button:hover::before {
+  left: 100%;
+}
+
+.tech-button:hover {
+  background: linear-gradient(45deg, rgba(0,255,255,0.2) 0%, rgba(255,0,128,0.2) 100%);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+/* Matrix rain effect */
+.matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Data visualization elements */
+.data-point {
+  width: 4px;
+  height: 4px;
+  background: #00ffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  animation: dataFlow 3s ease-in-out infinite;
+}
+
+/* Professional spacing with tech feel */
+.section-spacing {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.section-spacing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.3), transparent);
+  transform: translateX(-50%);
+}
+
+/* Loading animations */
+@keyframes loadingPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.loading-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ffff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  animation: loadingPulse 1.4s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Holographic effects */
+.holographic {
+  background: linear-gradient(45deg, 
+    rgba(0, 255, 255, 0.1) 0%,
+    rgba(255, 0, 128, 0.1) 25%,
+    rgba(136, 68, 255, 0.1) 50%,
+    rgba(0, 255, 136, 0.1) 75%,
+    rgba(0, 255, 255, 0.1) 100%);
+  background-size: 400% 400%;
+  animation: holographicShift 4s ease-in-out infinite;
+}
+
+@keyframes holographicShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .App-logo {
