@@ -12,14 +12,11 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import {
-  Launch as LaunchIcon,
   GitHub as GitHubIcon,
   LinkedIn as LinkedInIcon,
   Email as EmailIcon,
-  KeyboardArrowRight as ArrowIcon,
   Facebook as FacebookIcon,
   FileDownload as DownloadIcon,
-
   Instagram as InstagramIcon,
 } from '@mui/icons-material';
 
@@ -31,13 +28,7 @@ const Home: React.FC = () => {
 
   // Refs for scroll animations
   const aboutRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  
-  const skills = [
-    'Tech Lead AI', 'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
-    'Deep Learning Researcher',
-  ];
   
   
   const contactLinks = [
@@ -47,12 +38,12 @@ const Home: React.FC = () => {
     { name: 'Instagram', icon: <InstagramIcon fontSize="small" />, url: 'https://www.instagram.com/oussamasmaoui' },
   ];
   
-  const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   // Typing animation effect
   useEffect(() => {
+    const skills = [
+      'Tech Lead AI', 'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
+      'Deep Learning Researcher',
+    ];
     const currentSkill = skills[currentSkillIndex];
     const timeout = setTimeout(() => {
       if (!isDeleting) {
@@ -72,7 +63,7 @@ const Home: React.FC = () => {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [typedText, isDeleting, currentSkillIndex, skills]);
+  }, [typedText, isDeleting, currentSkillIndex]);
 
   return (
     <Container maxWidth="lg">

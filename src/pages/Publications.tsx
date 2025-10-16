@@ -8,8 +8,6 @@ import {
   Chip,
   Button,
   Paper,
-  Grid,
-  Divider,
 } from '@mui/material';
 import {
   Article as ArticleIcon,
