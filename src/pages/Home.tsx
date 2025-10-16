@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Container,
   Typography,
@@ -16,7 +17,10 @@ import {
   LinkedIn as LinkedInIcon,
   Email as EmailIcon,
   KeyboardArrowRight as ArrowIcon,
+  Facebook as FacebookIcon,
   FileDownload as DownloadIcon,
+
+  Instagram as InstagramIcon,
 } from '@mui/icons-material';
 
 const Home: React.FC = () => {
@@ -32,14 +36,15 @@ const Home: React.FC = () => {
   
   const skills = [
     'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
-    'Deep Learning Researcher', 'PyTorch Developer', 'Medical AI Innovator'
+    'Deep Learning Researcher', 'AI Vibe Coder – turning any idea into code', 'Medical AI Innovator'
   ];
   
   
   const contactLinks = [
-    { name: 'Email', icon: <EmailIcon fontSize="small" />, url: 'mailto:osmaoui1996@gmail.com' },
     { name: 'LinkedIn', icon: <LinkedInIcon fontSize="small" />, url: 'https://linkedin.com/in/oussama-smaoui' },
     { name: 'GitHub', icon: <GitHubIcon fontSize="small" />, url: 'https://github.com/osmaoui' },
+    { name: 'Facebook', icon: <FacebookIcon fontSize="small" />, url: 'https://www.facebook.com/osmaoui' },
+    { name: 'Instagram', icon: <InstagramIcon fontSize="small" />, url: 'https://www.instagram.com/oussamasmaoui' },
   ];
   
   const scrollToContact = () => {
@@ -147,16 +152,16 @@ const Home: React.FC = () => {
                 lineHeight: 1.7,
               }}
             >
-              I'm an AI/ML engineer specializing in 2D/3D computer vision applications.
-              With 4+ years of experience in research and development, I'm focused on
-              creating innovative solutions in the medical imaging domain,
-              particularly for dental AI applications.              
-            </Typography>
+              I’m an AI/ML engineer specializing in <strong>2D/3D computer vision</strong> and <strong>medical imaging</strong>. 
+              Currently at <strong>Udini</strong>, I design and deploy advanced <strong>dental AI solutions</strong> — turning 
+              research breakthroughs into real-world impact.  
+          </Typography>
+
             
             <Button
               variant="outlined"
               component="a"
-              href="/resume.pdf"
+              href="/Oussama-SMAOUI-Resume.pdf"
               target="_blank"
               sx={{
                 borderColor: theme.palette.primary.main,
@@ -259,12 +264,9 @@ const Home: React.FC = () => {
                     lineHeight: 1.8,
                   }}
                 >
-                  Innovative AI engineer with <strong>4+ years of experience</strong> in research and development. 
-                  Skilled in the entire AI development lifecycle, from ideation to deployment, with a focus on 
-                  <strong> 2D/3D computer vision challenges</strong>. Completed a graduation internship at 
-                  <strong> Ecole Centrale de Lyon</strong> and graduated from <strong>SUP'COM</strong>. 
-                  Passionate about research, staying up to date with the latest advancements, and applying 
-                  cutting-edge AI achievements in practical applications.
+                  I’m an AI engineer with <strong>4+ years of experience</strong> spanning the full AI lifecycle — from 
+                  research to production deployment. After graduating from <strong>SUP’COM</strong>, I completed a research 
+                  internship at <strong>École Centrale de Lyon</strong>, where I explored advanced methods in 3D modelisation models. 
                 </Typography>
 
                 <Typography
@@ -276,10 +278,10 @@ const Home: React.FC = () => {
                     lineHeight: 1.8,
                   }}
                 >
-                  Currently working at <strong>Udini - Dental AI</strong>, where I build high-precision 3D 
-                  registration systems and self-supervised learning methods for 3D IOS analysis, and 
-                  contribute to the broader dental AI research community. See the <strong>Experience</strong> 
-                  page for detailed achievements.
+                  At <strong>Udini – Dental AI</strong>, I focus on <strong>3D computer vision</strong> for medical imaging, 
+                  building high-precision registration systems and developing self-supervised learning methods for 
+                  intraoral scans. Beyond engineering, I actively contribute to the community as a <strong>MICCAI 
+                  workshop organizer</strong>, bridging research and applied innovation.
                 </Typography>
 
                 <Box sx={{ mb: 3, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
@@ -415,8 +417,8 @@ const Home: React.FC = () => {
             </Typography>
             <Button
               variant="outlined"
-              component="a"
-              href="mailto:osmaoui1996@gmail.com"
+              component={RouterLink}
+              to="/contact"
               sx={{
                 borderColor: theme.palette.primary.main,
                 color: theme.palette.primary.main,
