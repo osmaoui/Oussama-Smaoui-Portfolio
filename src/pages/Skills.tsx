@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
       title: 'Deep Learning Frameworks',
       icon: <AIIcon />,
       color: theme.palette.secondary.main,
-      skills: ['PyTorch', 'PyTorch3D', 'TensorFlow', 'ONNX', 'TensorRT', 'Keras']
+      skills: ['PyTorch', 'PyTorch3D', 'TensorFlow', 'ONNX', 'TensorRT']
     },
     {
       title: 'Cloud & Infrastructure',
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
       title: 'Computer Vision & 3D',
       icon: <VideoIcon />,
       color: theme.palette.info.main,
-      skills: ['OpenCV', 'Open3D', 'Point Cloud Processing', '3D Reconstruction', 'YOLO', 'Segmentation']
+      skills: ['OpenCV', 'Open3D', 'Point Cloud Processing', '3D Registration', 'YOLO', 'Segmentation']
     },
     {
       title: 'Video Analytics & Streaming',
@@ -62,7 +62,7 @@ const Skills: React.FC = () => {
       title: 'Programming Libraries',
       icon: <CodeIcon />,
       color: theme.palette.primary.dark,
-      skills: ['NumPy', 'Pandas', 'Scikit-learn', 'PyG (PyTorch Geometric)', 'Matplotlib', 'Seaborn']
+      skills: ['NumPy', 'Pandas', 'Scikit-learn', 'PyG (PyTorch Geometric)', 'Matplotlib', 'Seaborn', 'Trimesh', 'Meshlib']
     },
     {
       title: 'Languages',
