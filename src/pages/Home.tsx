@@ -35,8 +35,8 @@ const Home: React.FC = () => {
   const contactRef = useRef<HTMLDivElement>(null);
   
   const skills = [
-    'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
-    'Deep Learning Researcher', 'AI Vibe Coder – turning any idea into code', 'Medical AI Innovator'
+    'Tech Lead AI', 'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
+    'Deep Learning Researcher',
   ];
   
   
@@ -153,7 +153,7 @@ const Home: React.FC = () => {
               }}
             >
               I’m an AI/ML engineer specializing in <strong>2D/3D computer vision</strong> and <strong>medical imaging</strong>. 
-              Currently at <strong>Udini</strong>, I design and deploy advanced <strong>dental AI solutions</strong> — turning 
+              Currently at <strong>Udini</strong>, I design and deploy advanced <strong> AI solutions</strong> — turning 
               research breakthroughs into real-world impact.  
           </Typography>
 
@@ -304,7 +304,7 @@ const Home: React.FC = () => {
                 </Box>
 
               </Box>
-
+{/* 
               <Box sx={{ flex: { xs: '1 1 100%', md: '1 1 40%' }, display: 'flex', justifyContent: 'center' }}>
                 <Box
                   sx={{
@@ -366,7 +366,7 @@ const Home: React.FC = () => {
                     }}
                   />
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
           </Box>
         </motion.div>
