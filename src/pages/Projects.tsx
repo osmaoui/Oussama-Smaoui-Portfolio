@@ -42,11 +42,11 @@ const Projects: React.FC = () => {
     {
       title: '3D Registration Algorithm for Dental Scans',
       description: 'High-precision 3D registration algorithm to align structured light intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy.',
-      technologies: ['Computer Vision', '3D Reconstruction', 'Point Cloud Processing', 'OpenCV'],
-      achievements: ['Sub-millimeter Accuracy', 'Multi-pose Alignment', 'Real-time Processing'],
+      technologies: ['Computer Vision', 'Pytorch3D', 'loss optimizations', 'OpenCV'],
+      achievements: ['Sub-millimeter Accuracy', 'Multi-pose Alignment'],
 
       githubUrl: '#',
-      image: '/api/placeholder/400/250',
+      image: '/assets/projects/3D_2DRegisstration.png',
       category: 'Computer Vision'
     },
     {
@@ -77,8 +77,8 @@ const Projects: React.FC = () => {
       achievements: ['Generative Design', 'Novel Application', 'POC Implementation'],
 
       githubUrl: '#',
-      image: '/api/placeholder/400/250',
-      category: 'Generative AI'
+      image: '/assets/projects/crown_gen.png',
+      category: 'Research'
     },
     {
       title: 'LipReading System with GANs',
@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
       achievements: ['Landmark Detection', 'GAN Augmentation', 'Speech Recognition'],
 
       githubUrl: '#',
-      image: '/api/placeholder/400/250',
+      image: '/assets/projects/lipreading.png',
       category: 'Computer Vision'
     }
   ];
@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
                 alignItems: 'center',
                 fontFamily: "'Calibre', 'Inter', 'San Francisco', sans-serif",
                 '&::before': {
-                  content: '"02."',
+                  content: '"04."',
                   color: theme.palette.primary.main,
                   fontFamily: "'SF Mono', 'Fira Code', monospace",
                   fontSize: '1.5rem',
@@ -238,16 +238,23 @@ const Projects: React.FC = () => {
                       }
                     }}
                   >
-                    <Box sx={{ position: 'relative' }}>
+                    <Box sx={{ 
+                      position: 'relative',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      height: 200,
+                      backgroundColor: '#112240',
+                      p: 2
+                    }}>
                       <CardMedia
                         component="img"
                         image={project.image}
                         className="project-preview"
                         sx={{
-                          height: 200,
-                          backgroundColor: '#112240',
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
+                          maxHeight: '100%',
+                          maxWidth: '100%',
+                          objectFit: 'contain',
                           filter: 'grayscale(100%) contrast(1)',
                           opacity: 0.6,
                           transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
