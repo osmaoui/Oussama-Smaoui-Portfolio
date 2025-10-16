@@ -111,7 +111,7 @@ const Experience: React.FC = () => {
                 alignItems: 'center',
                 fontFamily: "'Calibre', 'Inter', 'San Francisco', sans-serif",
                 '&::before': {
-                  content: '"01."',
+                  content: '"02."',
                   color: theme.palette.primary.main,
                   fontFamily: "'SF Mono', 'Fira Code', monospace",
                   fontSize: '1.5rem',
