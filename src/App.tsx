@@ -166,9 +166,8 @@ const theme = createTheme({
 
 function App() {
   // Use basename for GitHub Pages deployment
-  const basename = process.env.NODE_ENV === 'production' 
-    ? '/Oussama-Smaoui-Portfolio' 
-    : '';
+  // Always use the basename since the dev server is also configured with it
+  const basename = '/Oussama-Smaoui-Portfolio';
 
   return (
     <ThemeProvider theme={theme}>

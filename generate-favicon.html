@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Favicon</title>
+</head>
+<body>
+    <h1>Your Custom Favicon</h1>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <br><br>
+    <a id="download" download="favicon.ico">Right-click and "Save Link As" → favicon.ico</a>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Background - Navy
+        ctx.fillStyle = '#0a192f';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Border - Cyan
+        ctx.strokeStyle = '#64ffda';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(1, 1, 30, 30);
+        
+        // Text - OS
+        ctx.fillStyle = '#64ffda';
+        ctx.font = 'bold 16px monospace';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('OS', 16, 17);
+        
+        // Convert to downloadable image
+        canvas.toBlob(function(blob) {
+            const url = URL.createObjectURL(blob);
+            document.getElementById('download').href = url;
+        });
+    </script>
+</body>
+</html>
