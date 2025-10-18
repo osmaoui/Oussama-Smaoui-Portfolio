@@ -114,7 +114,7 @@ const Header: React.FC = () => {
                 transform: 'translateY(-3px)'
               },
             }}
-            href="/resume.pdf"
+            href={`${process.env.PUBLIC_URL}/Oussama-SMAOUI-Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -203,7 +203,7 @@ const Header: React.FC = () => {
                       transform: 'translateY(-3px)'
                     },
                   }}
-                  href="/resume.pdf"
+                  href={`${process.env.PUBLIC_URL}/Oussama-SMAOUI-Resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

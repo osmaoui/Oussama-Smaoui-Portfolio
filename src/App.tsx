@@ -165,10 +165,15 @@ const theme = createTheme({
 });
 
 function App() {
+  // Use basename for GitHub Pages deployment
+  const basename = process.env.NODE_ENV === 'production' 
+    ? '/Oussama-Smaoui-Portfolio' 
+    : '';
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename={basename}>
         <ScrollToTop />
         <div className="App">
           <Header />

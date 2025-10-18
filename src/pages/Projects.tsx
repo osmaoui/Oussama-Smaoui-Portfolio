@@ -36,17 +36,17 @@ const Projects: React.FC = () => {
 
       githubUrl: '#',
       demoUrl: '#',
-      image: '/assets/projects/3DteethSeg.jpeg',
+      image: `${process.env.PUBLIC_URL}/assets/projects/3DteethSeg.jpeg`,
       category: 'Medical AI'
     },
     {
-      title: '3D Registration Algorithm for Dental Scans',
-      description: 'High-precision 3D registration algorithm to align structured light intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy.',
+      title: 'Multi-Modal Dental Scan and Photo Registration',
+      description: 'Developed an optimization-based 3D registration method using PyTorch3D with contour and mask losses for precise alignment. Built a Vision Transformer model to predict similarity between scans and photos, ensuring patient-level matching with sub-millimeter accuracy.',
       technologies: ['Computer Vision', 'Pytorch3D', 'loss optimizations', 'OpenCV'],
-      achievements: ['Sub-millimeter Accuracy', 'Multi-pose Alignment'],
+      achievements: ['Sub-millimeter Accuracy', 'Multi-pose Alignment', 'Optimization-based Registration'],
 
       githubUrl: '#',
-      image: '/assets/projects/3D_2DRegisstration.png',
+      image: `${process.env.PUBLIC_URL}/assets/projects/3D_2DRegisstration.png`,
       category: 'Computer Vision'
     },
     {
@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
       achievements: ['Generative Design', 'Novel Application', 'POC Implementation'],
 
       githubUrl: '#',
-      image: '/assets/projects/crown_gen.png',
+      image: `${process.env.PUBLIC_URL}/assets/projects/crown_gen.png`,
       category: 'Research'
     },
     {
@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
       achievements: ['Landmark Detection', 'GAN Augmentation', 'Speech Recognition'],
 
       githubUrl: '#',
-      image: '/assets/projects/lipreading.png',
+      image: `${process.env.PUBLIC_URL}/assets/projects/lipreading.png`,
       category: 'Computer Vision'
     }
   ];

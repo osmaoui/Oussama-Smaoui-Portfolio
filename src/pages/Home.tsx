@@ -152,7 +152,7 @@ const Home: React.FC = () => {
             <Button
               variant="outlined"
               component="a"
-              href="/Oussama-SMAOUI-Resume.pdf"
+              href={`${process.env.PUBLIC_URL}/Oussama-SMAOUI-Resume.pdf`}
               target="_blank"
               sx={{
                 borderColor: theme.palette.primary.main,
@@ -178,7 +178,8 @@ const Home: React.FC = () => {
             <Button
               variant="contained"
               color="primary"
-              href="/projects"
+              component={RouterLink}
+              to="/projects"
               sx={{
                 ml: 2,
                 py: 1.5,
