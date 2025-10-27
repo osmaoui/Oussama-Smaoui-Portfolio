@@ -32,13 +32,19 @@ const Skills: React.FC = () => {
       title: 'Deep Learning Frameworks',
       icon: <AIIcon />,
       color: theme.palette.secondary.main,
-      skills: ['PyTorch', 'PyTorch3D', 'TensorFlow', 'ONNX', 'TensorRT']
+      skills: ['PyTorch', 'PyTorch3D', 'PyG (PyTorch Geometric)', 'TensorFlow', 'ONNX', 'TensorRT']
+    },
+    {
+      title: 'Full-Stack',
+      icon: < CodeIcon/>,
+      color: theme.palette.secondary.main,
+      skills: ['Next.JS', 'React', 'Three.js', 'FastAPI' , 'NestJs']
     },
     {
       title: 'Cloud & Infrastructure',
       icon: <CloudIcon />,
       color: theme.palette.success.main,
-      skills: ['AWS (S3, SageMaker, SQS)', 'Docker', 'Kubernetes', 'Linux', 'Git']
+      skills: ['AWS (S3, SageMaker, SQS, RDS)', 'Docker', 'Kubernetes', 'Linux', 'Git']
     },
     {
       title: 'MLOps & Tools',
@@ -50,7 +56,7 @@ const Skills: React.FC = () => {
       title: 'Computer Vision & 3D',
       icon: <VideoIcon />,
       color: theme.palette.info.main,
-      skills: ['OpenCV', 'Open3D', 'Point Cloud Processing', '3D Registration', 'YOLO', 'Segmentation']
+      skills: ['OpenCV', 'Trimesh', 'Open3D', 'meshlib', '3D Registration', 'CSG Operations', 'WebGL']
     },
     {
       title: 'Video Analytics & Streaming',
@@ -59,10 +65,10 @@ const Skills: React.FC = () => {
       skills: ['DeepStream', 'GStreamer', 'NVIDIA Jetson', 'Real-time Processing', 'Edge Computing']
     },
     {
-      title: 'Programming Libraries',
+      title: 'Data science Libraries',
       icon: <CodeIcon />,
       color: theme.palette.primary.dark,
-      skills: ['NumPy', 'Pandas', 'Scikit-learn', 'PyG (PyTorch Geometric)', 'Matplotlib', 'Seaborn', 'Trimesh', 'Meshlib']
+      skills: ['NumPy', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Plotly']
     },
     {
       title: 'Languages',

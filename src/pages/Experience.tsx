@@ -20,6 +20,7 @@ const Experience: React.FC = () => {
       period: '02/2021 – present',
       location: 'Sfax, Tunisia',
       achievements: [
+        'Architected and developed dental CAD/CAM platforms: built a scalable FastAPI microservices backend and 3D mesh processing pipeline, delivering an interactive React/Three.js viewer.',
         'Developed high-precision 3D registration algorithm to align structured light intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy',
         'Pioneered self-supervised learning for 3D IOS analysis using models like PointGpt, PointBert, and PointMAE to improve segmentation and labeling accuracy',
         'Organizer of the 3DTeethLand challenge (MICCAI 2024): Developed evaluation metrics, data governance strategy, and managed end-to-end submission process',
@@ -28,7 +29,7 @@ const Experience: React.FC = () => {
         'Actively contributed as organizing member for 3D teeth segmentation and labeling challenge (MICCAI 2022)',
         'Utilized machine learning algorithms to predict smile design aesthetics parameters from face landmarks'
       ],
-      technologies: ['Python', 'PyTorch', 'Point Clouds', 'GNN', 'Self-Supervised Learning', '3D Vision', 'MICCAI']
+      technologies: ['Python', 'PyTorch', 'Point Clouds', 'GNN', 'Self-Supervised Learning', '3D Vision', 'MICCAI', 'Next.js 15', 'React Three Fiber', 'FastAPI', 'PostgreSQL', 'Trimesh', 'Open3D', 'PyMeshLab', 'CSG Operations', 'LDAP3', 'Microservices']
     },
     {
       title: 'External Collaboration - Soccer AI Camera',

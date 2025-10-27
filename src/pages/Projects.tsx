@@ -29,6 +29,26 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: '3D Dental Scan Cleaning',
+      description: 'A web-based platform for interactive processing and refinement of 3D intraoral scans, offering advanced tools for real-time mesh smoothing, selective sculpting, automatic region generation, and tunnel detection — empowering dental professionals to achieve precise and efficient 3D model optimization.',
+      technologies: ['React', 'Three.js', 'FastAPI', 'Python', 'Meshlib', 'CSG Operations'],
+      achievements: ['Real-time 3D Processing', 'Automated Mesh Repair', 'Interactive Tools'],
+      githubUrl: '#',
+      demoUrl: '#',
+      image: `${process.env.PUBLIC_URL}/assets/projects/dental_cleaning.png`,
+      category: '3D Web Application'
+    },
+    {
+      title: 'Dental CAO Platform',
+      description: 'Web-based orthodontic CAD/CAM platform for post-treatment processing, enabling precise cutline estimation, hole filling, and 3D orientation refinement to generate accurate aligner impressions.',
+      technologies: ['Next.js', 'Three.js', 'FastAPI', 'PostgreSQL', 'Python', 'Open3D'],
+      achievements: ['Production System', 'Microservices Architecture', 'High Performance'],
+      githubUrl: '#',
+      demoUrl: '#',
+      image: `${process.env.PUBLIC_URL}/assets/projects/dental_cao.png`,
+      category: '3D Web Application'
+    },
+    {
       title: '3D Teeth Segmentation & Labeling (GNN)',
       description: 'Innovative approach for 3D teeth intraoral scan segmentation and labeling using Graph Neural Networks. Achieved 94.5% F1 score on Teeth3DS dataset while significantly reducing memory usage and processing time.',
       technologies: ['PyTorch', 'Graph Neural Networks', 'Point Clouds', '3D Vision', 'Medical AI'],
@@ -37,7 +57,7 @@ const Projects: React.FC = () => {
       githubUrl: '#',
       demoUrl: '#',
       image: `${process.env.PUBLIC_URL}/assets/projects/3DteethSeg.jpeg`,
-      category: 'Medical AI'
+      category: 'Research'
     },
     {
       title: 'Multi-Modal Dental Scan and Photo Registration',
@@ -159,7 +179,7 @@ const Projects: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Showcasing cutting-edge AI/ML projects with video demonstrations and technical details
+            Exploring the frontier of AI and 3D vision through practical, research-driven projects.
           </Typography>
         </motion.div>
 
