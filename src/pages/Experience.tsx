@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
       location: 'Sfax, Tunisia',
       achievements: [
         'Architected and developed dental CAD/CAM platforms: built a scalable FastAPI microservices backend and 3D mesh processing pipeline, delivering an interactive React/Three.js viewer.',
-        'Developed high-precision 3D registration algorithm to align structured light intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy',
+        'Developed high-precision 3D registration algorithm to align *intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy',
         'Pioneered self-supervised learning for 3D IOS analysis using models like PointGpt, PointBert, and PointMAE to improve segmentation and labeling accuracy',
         'Organizer of the 3DTeethLand challenge (MICCAI 2024): Developed evaluation metrics, data governance strategy, and managed end-to-end submission process',
         'Conducting proof-of-concept for Diffusion Probabilistic Model to generate 3D point cloud crown design',

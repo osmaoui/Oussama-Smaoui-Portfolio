@@ -296,7 +296,7 @@ const Home: React.FC = () => {
                 </Box>
 
               </Box>
-{/* 
+
               <Box sx={{ flex: { xs: '1 1 100%', md: '1 1 40%' }, display: 'flex', justifyContent: 'center' }}>
                 <Box
                   sx={{
@@ -311,35 +311,16 @@ const Home: React.FC = () => {
                     sx={{
                       position: 'relative',
                       zIndex: 1,
-                      '&::before': {
-                        content: '""',
-                        position: 'absolute',
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '4px',
-                        transition: 'all 0.25s cubic-bezier(0.645,0.045,0.355,1)',
-                        backgroundColor: theme.palette.primary.main,
-                        opacity: 0.5,
-                        top: 0,
-                        left: 0,
-                        mixBlendMode: 'screen',
-                      },
-                      '&:hover::before': {
-                        backgroundColor: 'transparent',
-                        opacity: 0,
-                      },
                     }}
                   >
                     <Box
                       component="img"
-                      src="/profile.jpg"
+                      src={`${process.env.PUBLIC_URL}/assets/profile/profile.png`}
                       alt="Oussama SMAOUI"
                       sx={{
                         width: '100%',
                         height: 'auto',
                         borderRadius: '4px',
-                        filter: 'grayscale(100%) contrast(1.1)',
-                        mixBlendMode: 'multiply',
                         objectFit: 'cover',
                       }}
                     />
@@ -358,7 +339,7 @@ const Home: React.FC = () => {
                     }}
                   />
                 </Box>
-              </Box> */}
+              </Box>
             </Box>
           </Box>
         </motion.div>

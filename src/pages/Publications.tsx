@@ -22,7 +22,7 @@ import { motion } from 'framer-motion';
 const Publications: React.FC = () => {
   const publications = [
     {
-      title: 'IoSR: End-to-End Intraoral Scans Repairin',
+      title: 'IoSR: End-to-End Intraoral Scans Repairing',
       authors: 'Manel Farhat, Achraf Ben-Hamadou, Ahmed Rekik, Ons Abida, Oussama Smaoui',
       journal : 'British Machine Vision Conference',
       year: '2025',
