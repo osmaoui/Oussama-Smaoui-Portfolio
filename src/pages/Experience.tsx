@@ -15,24 +15,23 @@ const Experience: React.FC = () => {
   
   const workExperience = [
     {
-      title: 'AI / ML Engineer',
-      company: 'Udini - Dental AI',
+      title: 'AI / ML & 3D Software Engineer — Research to Product',
+      company: 'Udini.ai — Dental AI (now part of Upperside Group)',
       period: '02/2021 – present',
       location: 'Sfax, Tunisia',
       achievements: [
-        'Architected and developed dental CAD/CAM platforms: built a scalable FastAPI microservices backend and 3D mesh processing pipeline, delivering an interactive React/Three.js viewer.',
-        'Developed high-precision 3D registration algorithm to align *intraoral scans with real photos in different poses (frontal, lateral, intraoral), ensuring sub-millimeter accuracy',
-        'Pioneered self-supervised learning for 3D IOS analysis using models like PointGpt, PointBert, and PointMAE to improve segmentation and labeling accuracy',
-        'Organizer of the 3DTeethLand challenge (MICCAI 2024): Developed evaluation metrics, data governance strategy, and managed end-to-end submission process',
-        'Conducting proof-of-concept for Diffusion Probabilistic Model to generate 3D point cloud crown design',
-        'Designed, developed, and deployed innovative approach for 3D teeth intraoral scan segmentation and labeling using GNN. Achieved 94.5% f1 score on Teeth3DS dataset while significantly reducing memory usage and processing time',
-        'Actively contributed as organizing member for 3D teeth segmentation and labeling challenge (MICCAI 2022)',
-        'Utilized machine learning algorithms to predict smile design aesthetics parameters from face landmarks'
+        'End-to-end owner of dental AI solutions: I take ideas from research prototypes to production applications used daily by dental labs and clinicians — covering AI models, 3D geometry processing, backend services, interactive 3D interfaces, and deployment.',
+        'Product & Application Design — Conceived and built a full suite of dental lab applications: an AI workflow automation platform orchestrating the digital production lifecycle, an interactive 3D scan cleaning workspace, and a CAD/CAM preparation tool for 3D printing — from initial concept and UX design to production release.',
+        'Mesh Processing & 3D Geometry — Developed advanced mesh processing capabilities: automatic cutline estimation, geometric anomaly detection and repair, sculpting and smoothing tools, socle (base) generation, hole filling, boolean operations, and post-processing pipelines that produce 3D-print-ready dental models.',
+        'Applied AI Research — Designed and trained 3D deep learning models for teeth segmentation and labeling (94.5% F1 on Teeth3DS), self-supervised learning on intraoral scans (PointMAE, Point-BERT, PointGPT), 3D scan-to-photo registration with sub-millimeter accuracy, and generative models for crown design and smile aesthetics.',
+        'Platform & Automation Engineering — Built agent-based workflow orchestration connecting all applications into one automated pipeline, with real-time tracking, quality assessment scoring, retry/recovery, and human-in-the-loop intervention where expert judgment is needed.',
+        'Data & Infrastructure — Created data lakes and validation pipelines for intraoral scan datasets, STL requirement checkers, and cloud infrastructure as code — ensuring reliable data foundations for both research and production.',
+        'Scientific Community — Co-organized international 3D dental AI challenges at MICCAI 2022 (3DTeethSeg)and MICCAI 2024 (3DTeethLand): built benchmark datasets, defined evaluation metrics, and managed end-to-end submissions.'
       ],
-      technologies: ['Python', 'PyTorch', 'Point Clouds', 'GNN', 'Self-Supervised Learning', '3D Vision', 'MICCAI', 'Next.js 15', 'React Three Fiber', 'FastAPI', 'PostgreSQL', 'Trimesh', 'Open3D', 'PyMeshLab', 'CSG Operations', 'LDAP3', 'Microservices']
+      technologies: ['Python', 'PyTorch', '3D Deep Learning', 'Mesh Processing', 'Computational Geometry', 'React', 'TypeScript', 'Three.js', 'FastAPI', 'Microservices', 'PostgreSQL', 'RabbitMQ', 'Celery', 'AWS / CDK', 'Docker', 'MICCAI']
     },
     {
-      title: 'External Collaboration - Soccer AI Camera',
+      title: 'Computer Vision Engineer — Soccer AI Camera (External Collaboration, part-time)',
       company: 'Reeplayer',
       period: '2021 – present',
       location: 'Remote',

@@ -41,8 +41,8 @@ const Home: React.FC = () => {
   // Typing animation effect
   useEffect(() => {
     const skills = [
-      'Tech Lead AI', 'AI/ML Engineer', 'Computer Vision Expert', '3D Point Cloud Specialist', 
-      'Deep Learning Researcher',
+      'AI/ML Engineer', 'Applied Scientist', 'Research Engineer', 'Computer Vision Engineer',
+      '3D Point Cloud Specialist',
     ];
     const currentSkill = skills[currentSkillIndex];
     const timeout = setTimeout(() => {
@@ -143,9 +143,7 @@ const Home: React.FC = () => {
                 lineHeight: 1.7,
               }}
             >
-              I’m an AI/ML engineer specializing in <strong>2D/3D computer vision</strong> and <strong>medical imaging</strong>. 
-              Currently at <strong>Udini</strong>, I design and deploy advanced <strong> AI solutions</strong> — turning 
-              research breakthroughs into real-world impact.  
+              AI/ML Engineer with 5 years at <strong>Udini.ai</strong>, building production AI systems for <strong>3D medical imaging</strong> — from deep-learning models and 3D vision pipelines to the web platforms that put them in clinicians’ hands.  
           </Typography>
 
             
@@ -256,9 +254,7 @@ const Home: React.FC = () => {
                     lineHeight: 1.8,
                   }}
                 >
-                  I’m an AI engineer with <strong>4+ years of experience</strong> spanning the full AI lifecycle — from 
-                  research to production deployment. After graduating from <strong>SUP’COM</strong>, I completed a research 
-                  internship at <strong>École Centrale de Lyon</strong>, where I explored advanced methods in 3D modelisation models. 
+                  I’m an AI/ML engineer with <strong>5 years of experience</strong> at <strong>Udini.ai</strong> — from early startup to joining the <strong>Upperside Group</strong> — spanning the full AI lifecycle from research to production deployment. After graduating from <strong>SUP’COM</strong>, I completed a research internship at <strong>École Centrale de Lyon</strong>, where I worked on advanced 3D modeling and simulation methods. 
                 </Typography>
 
                 <Typography
@@ -270,19 +266,28 @@ const Home: React.FC = () => {
                     lineHeight: 1.8,
                   }}
                 >
-                  At <strong>Udini – Dental AI</strong>, I focus on <strong>3D computer vision</strong> for medical imaging, 
-                  building high-precision registration systems and developing self-supervised learning methods for 
-                  intraoral scans. Beyond engineering, I actively contribute to the community as a <strong>MICCAI 
-                  workshop organizer</strong>, bridging research and applied innovation.
+                  What makes my profile a bit different is that I work across the <strong>full spectrum</strong> — from research to production. On the research side, I have contributed to papers published at top conferences like <strong>MICCAI</strong> and <strong>BMVC</strong>, and in journals like <strong>Medical Image Analysis</strong>. I also co-organized <strong>three scientific challenges</strong>, where I built the datasets, defined the evaluation metrics, and managed the full submission process.
+                </Typography>
+
+                <Typography
+                  variant="body1"
+                  sx={{
+                    color: theme.palette.text.secondary,
+                    mb: 3,
+                    fontSize: '1.1rem',
+                    lineHeight: 1.8,
+                  }}
+                >
+                  But research alone is not enough for me. I also care deeply about turning science into real applications. So in parallel, I design and train models, build <strong>production-ready systems</strong>, and deploy them — including on edge hardware like <strong>Jetson Orin</strong>.
                 </Typography>
 
                 <Box sx={{ mb: 3, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   {[
-                    '4+ Years Experience',
+                    '5+ Years Experience',
                     '3D Computer Vision',
                     'Medical AI',
-                    'Research & Development',
-                    'Production Deployment',
+                    'Research → Production',
+                    'Full-Stack AI',
                     'MICCAI Organizer'
                   ].map((highlight, index) => (
                     <Chip

@@ -49,6 +49,16 @@ const Projects: React.FC = () => {
       category: '3D Web Application'
     },
     {
+      title: 'Dental Lab Workflow Automation',
+      description: 'AI-powered workflow orchestration platform that connects dental lab operations from intraoral scan intake through cleaning, segmentation, CAD/CAM preparation, and quality control into one automated, trackable pipeline with human-in-the-loop intervention.',
+      technologies: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'RabbitMQ', 'Agent Architecture', 'Python'],
+      achievements: ['End-to-End Automation', 'Real-Time Tracking', 'Retry & Recovery'],
+      githubUrl: '#',
+      demoUrl: '#',
+      image: '/api/placeholder/400/250',
+      category: 'AI Workflow Platform'
+    },
+    {
       title: '3D Teeth Segmentation & Labeling (GNN)',
       description: 'Innovative approach for 3D teeth intraoral scan segmentation and labeling using Graph Neural Networks. Achieved 94.5% F1 score on Teeth3DS dataset while significantly reducing memory usage and processing time.',
       technologies: ['PyTorch', 'Graph Neural Networks', 'Point Clouds', '3D Vision', 'Medical AI'],
